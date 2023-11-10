@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Comedians</title>
+</head>
+<body>
+    <h1>Comedians</h1>
+    <ul>
+        <comedian.forEach(comedian=> { %> <li>
+            <%=comedian.name%> - <%= comedian.state%> - Jokes: <%= comedian.jokes.join(",") %>
+                </li>
+                <% }) %>
+    </ul>
+</body>
+</html>
