@@ -16,6 +16,7 @@ app.use("/jokesHealth", jokesHealthRouter)
 //stylesheet link
 app.use(express.static("./styles"))
 
+
 //error middleware
 const errorHandler = (err, req, res, next) => {
     console.error(err.stack);

@@ -8,6 +8,13 @@
 </head>
 <body>
     <h1>Comedians</h1>
+
+<form>
+    <label for="state"> Select Comedians by State:</label>
+    <input type="text" id="state" name="state placeholder="Enter State...">
+    <button type="Sumbit">Filter</button>
+</form>
+
     <ul>
         <% comedians.forEach(comedian=> {%> 
             <li>
