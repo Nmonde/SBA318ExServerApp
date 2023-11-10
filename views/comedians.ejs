@@ -9,8 +9,9 @@
 <body>
     <h1>Comedians</h1>
     <ul>
-        <comedian.forEach(comedian=> { %> <li>
-            <%=comedian.name%> - <%= comedian.state%> - Jokes: <%= comedian.jokes.join(",") %>
+        <% comedians.forEach(comedian=> {%> 
+            <li>
+            <%= comedian.stagename %> - <%= comedian.state %> - Joke: <%= comedian.joke %>
                 </li>
                 <% }) %>
     </ul>
